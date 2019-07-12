@@ -4,8 +4,8 @@ import json
 import numpy as np
 import cv2
 
-addr = 'http://localhost:6000'
-test_url = addr + '/test'
+addr = 'http://localhost:8000'
+test_url = addr
 
 # prepare headers for http request
 content_type = 'image/jpeg'
@@ -23,4 +23,4 @@ response = requests.post(test_url, data=img_encoded.tostring(), headers=headers)
 # image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 # cv2.imshow('image', image)
 # decode response
-print(str(json.loads(response.text)))
+print(json.loads(response.text))

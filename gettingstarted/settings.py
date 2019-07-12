@@ -26,6 +26,8 @@ SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be us
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 ALLOWED_HOSTS = []
 
@@ -40,13 +42,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "hello",
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
+    # "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -71,7 +74,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "gettingstarted.wsgi.application"
-
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
