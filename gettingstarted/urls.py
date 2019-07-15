@@ -16,7 +16,7 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
-    path(r'^api-auth/', include('rest_framework.urls')),
+    # path(r'^api-auth/', include('rest_framework.urls')),
     path('image_upload', hello.views.index, name='image_upload'),
     path('success', hello.views.success, name='success'),
 ]
