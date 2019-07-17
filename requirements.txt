@@ -145,7 +145,6 @@ pycparser==2.18
 pycrypto==2.6.1
 pycurl==7.43.0
 pyflakes==1.6.0
-pygame==1.9.3
 Pygments==2.2.0
 pylint==1.7.4
 pymavlink==2.3.4
