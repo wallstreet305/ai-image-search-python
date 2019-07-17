@@ -99,7 +99,6 @@ Markdown==2.6.11
 MarkupSafe==1.0
 matplotlib==3.0.2
 mccabe==0.6.1
-menuinst==1.4.10
 mistune==0.7.4
 monotonic==1.5
 mpmath==0.19
